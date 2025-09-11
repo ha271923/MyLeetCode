@@ -7,13 +7,13 @@ import java.util.HashMap;
 public class TwoSum {
     @Test
     public void main() {
-        int[] nums = new int[]{  2  ,  7  ,  11  ,  15  };
-        int   target = 9;
-        int[] res = twoSum(nums, target);
+        int[] nums = new int[]{2, 7, 11, 15};
+        int target = 13;
+        int[] res = twoSum3(nums, target);
 
         System.out.println("----------------------------------------------------------------");
-        System.out.println("res[0]="+res[0]);
-        System.out.println("res[1]="+res[1]);
+        System.out.println("res[0]=" + res[0]);
+        System.out.println("res[1]=" + res[1]);
     }
 
     /**
@@ -37,17 +37,17 @@ public class TwoSum {
      */
 
     /**
-     *   index =    0     1      2      3    Value
-     *  target =    9     9      9      9
-     *    nums = [  2  ,  7  ,  11  ,  15  ]
-     *    diff =    7     2     -2     -6    Key
-     *
-     *
-     *
-     *   Ans:
-     *    inputs=[  2  ,  7  ,  11  ,  15  ] Value[i]
-     *    --------------------------------------
-     *  diff=9 |    7     2     -2     -6   <- diffs[i]
+     * index =    0     1      2      3    Value
+     * target =    9     9      9      9
+     * nums = [  2  ,  7  ,  11  ,  15  ]
+     * diff =    7     2     -2     -6    Key
+     * <p>
+     * <p>
+     * <p>
+     * Ans:
+     * inputs=[  2  ,  7  ,  11  ,  15  ] Value[i]
+     * --------------------------------------
+     * diff=9 |    7     2     -2     -6   <- diffs[i]
      */
     public static int[] twoSum(int[] nums, int target) {
 
@@ -73,4 +73,42 @@ public class TwoSum {
 
         return res;
     }
+
+    // Hawk: Not good performance
+    public static int[] twoSum2(int[] nums, int target) {
+        int[] res = new int[]{-1, -1};
+
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = 0; j < nums.length; j++) {
+                if (nums[i] + nums[j] == target) {
+                    System.out.println("i+j=" + "??");
+                    res[0] = i;
+                    res[1] = j;
+                    return res;
+                }
+            }
+        }
+        return res;
+    }
+
+    /*
+        Hint1: 三變數求和可以用減法帶替搜尋
+        Hint2: HashMap可以有O(1)的搜尋時間提換掉一個for-loop
+        Hint3: 沒找到可以在for-loop中put
+     */
+    public static int[] twoSum3(int[] nums, int target) {
+        int[] res = new int[]{-1, -1};
+        HashMap<Integer, Integer> hashMap = new HashMap<>();
+
+        for(int i=0; i<nums.length; i++){
+            if(hashMap.containsKey(target - nums[i])){
+                 res[0] = hashMap.get(target - nums[i]);
+                 res[1] = i;
+                 return res;
+            }
+            hashMap.put(nums[i],i);
+        }
+        return res;
+    }
+
 }
