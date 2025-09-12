@@ -10,3 +10,6 @@
 2. Select Run 'XXXX' <br>
 3. See the XXXX execution result in Run Window if you called System.out.println API in XXXX.java <br>
 
+### Troubleshooting
+Q: When I use another version of Android Studio IDE, I cannot see the Run 'XXXX' option when right-clicking on test\XXXX.java. <br>
+A: Create a new Android project in this Android Studio IDE and check the default ExampleUnitTest.java. If the option appears and runs successfully, copy your existing test\XXXX.java files into this new project. <br>
