@@ -8,6 +8,12 @@ public class pre_post_calc {
     public void main(){
         post_calc();
         pre_calc();
+
+        int x=0, y=0;
+        if(++x == y++)
+            System.out.println("MIX: check ++x == y++  --> x="+x+"  y="+y);
+        else
+            System.out.println("MIX: check ++x != y++  --> x="+x+"  y="+y);
     }
 
 
@@ -32,6 +38,12 @@ public class pre_post_calc {
             System.out.println("4. a="+a);
 
         System.out.println("5. a="+a);
+
+        int x=0, y=0;
+        if(x++ == y++)
+            System.out.println("POST: check x++ == y++  --> x="+x+"  y="+y);
+        else
+            System.out.println("POST: check x++ != y++  --> x="+x+"  y="+y);
     }
 
     static public void pre_calc(){
@@ -60,8 +72,12 @@ public class pre_post_calc {
         else
             System.out.println("5 false. shift="+shift);
 
-
-
         System.out.println("5. a="+a);
+
+        int x=0, y=0;
+        if(++x == ++y)
+            System.out.println("PRE: check ++x == ++y  --> x="+x+"  y="+y);
+        else
+            System.out.println("PRE: check ++x != ++y  --> x="+x+"  y="+y);
     }
 }
