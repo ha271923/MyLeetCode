@@ -89,4 +89,10 @@ public class Out {
         // System.out.println(Arrays.toString(dp));
     }
 
+    static public void printListList(List<List<Integer>> data) {
+        for (List<Integer> list : data) {
+            System.out.println(list);
+        }
+    }
+
 }
