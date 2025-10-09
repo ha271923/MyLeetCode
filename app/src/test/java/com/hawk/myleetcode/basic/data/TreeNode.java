@@ -1,4 +1,4 @@
-package com.hawk.myleetcode.data;
+package com.hawk.myleetcode.basic.data;
 
 /**
  * Created by Edward on 23/07/2017.

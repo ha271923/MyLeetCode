@@ -1,4 +1,4 @@
-package com.hawk.myleetcode;
+package com.hawk.myleetcode.GREDDY;
 
 import org.junit.Test;
 

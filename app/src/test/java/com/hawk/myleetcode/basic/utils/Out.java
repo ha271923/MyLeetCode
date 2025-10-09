@@ -1,8 +1,9 @@
-package com.hawk.myleetcode.utils;
+package com.hawk.myleetcode.basic.utils;
 
+import java.util.HashMap;
 import java.util.List;
-import com.hawk.myleetcode.data.ListNode;
-import com.hawk.myleetcode.data.TreeNode;
+import com.hawk.myleetcode.basic.data.ListNode;
+import com.hawk.myleetcode.basic.data.TreeNode;
 public class Out {
     static public void i(String s) {
         System.out.println(s);
@@ -95,4 +96,9 @@ public class Out {
         }
     }
 
+    static public void printAllHashMapValues(HashMap<Character, Integer> hashMap) {
+        for(Character key : hashMap.keySet()) {
+            Out.i("KEY="+key+"   VALUE="+hashMap.get(key));
+        }
+    }
 }

@@ -1,4 +1,4 @@
-package com.hawk.myleetcode;
+package com.hawk.myleetcode.HASHING;
 
 import org.junit.Test;
 

@@ -1,6 +1,6 @@
-package com.hawk.myleetcode;
+package com.hawk.myleetcode.BACKTRACE;
 
-import com.hawk.myleetcode.utils.Out;
+import com.hawk.myleetcode.basic.utils.Out;
 
 import org.junit.Test;
 

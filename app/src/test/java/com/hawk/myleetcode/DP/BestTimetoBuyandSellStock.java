@@ -1,4 +1,4 @@
-package com.hawk.myleetcode;
+package com.hawk.myleetcode.DP;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.hawk.myleetcode.utils;
+package com.hawk.myleetcode.basic.utils;
 
 public class DP_utils {
 

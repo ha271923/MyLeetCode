@@ -1,6 +1,6 @@
-package com.hawk.myleetcode.data;
+package com.hawk.myleetcode.basic.data;
 
-import com.hawk.myleetcode.utils.Out;
+import com.hawk.myleetcode.basic.utils.Out;
 
 /**
  * Created by Edward on 25/07/2017.

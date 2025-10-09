@@ -1,8 +1,8 @@
-package com.hawk.myleetcode;
+package com.hawk.myleetcode.TWOPOINTERS;
 
-import static com.hawk.myleetcode.utils.Out.print_ListNode;
+import static com.hawk.myleetcode.basic.utils.Out.print_ListNode;
 
-import com.hawk.myleetcode.data.ListNode;
+import com.hawk.myleetcode.basic.data.ListNode;
 import org.junit.Test;
 /**
  * Project Name : Leetcode
